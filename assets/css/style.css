@@ -1,0 +1,206 @@
+@import './base.css';
+body {
+    background-color: #D9D9D9; /* Light Gray */
+}
+
+
+/*.loading{
+    display: flex;
+}
+
+.active{
+    display: none;
+}*/
+
+
+
+.loader-container{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.active{
+    display: flex;
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #000;
+    border-bottom-color: transparent;
+    animation: rotate 1s infinite linear;
+}
+
+
+@keyframes rotate{
+
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*header -------------------------------------------------- start*/
+.header{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px 0px;
+    box-shadow: 6px 3px 4px rgb(93, 82, 82);
+    position: sticky;
+    top: 0;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img{
+    width: 35px;
+}
+
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.navbar ul li a{
+    color: #101928;
+}
+
+.active{
+    font-weight: 700;
+}
+
+.auth{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.auth a{
+    font-family: var(--subFont);
+    border-radius: 10px;
+    padding: 5.3541765213012695px 20.18113136291504px;
+}
+
+.auth .login{
+    border:2px solid var(--maincolor);
+    font-weight: 700;
+}
+
+.auth .Register{
+    color: #fff;
+    background-color: var(--maincolor);
+    border:2px solid var(--maincolor);
+}
+
+.scrollNavbar{
+    background-color: #fff;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+}
+
+/*header media*/
+
+
+@media screen and (max-width: 950px){
+    .navbar ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+        order:1;
+    }
+}
+
+@media screen and (max-width:578px){
+    .auth{
+        display: none;
+    }
+}
+
+@media screen and (max-width:346px){
+    .container{
+        width: 90%;
+    }
+    .logo img{
+        width: 20px;
+    }
+    .log a{
+        font-size: 10px;
+    }
+}
+
+
+/*header -------------------------------------------------- End*/
+
+.category, .product {
+    background-color: #009B9B; /* Soft Teal */
+    width: 40%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.category:hover, .product:hover {
+    transform: scale(1.05);
+    background-color: #FFD54F; /* Light Mustard */
+}
+
+.products h2 {
+    width: 100%;
+    text-align: center;
+    background-color: #A1B2B2; /* Light Slate Gray */
+    color: #333333; /* Dark Gray */
+}
+
+.button {
+    background-color: #D77C3A; /* Light Copper */
+    color: #1A1A1A; /* Very Dark Gray */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #FFAB91; /* Peach */
+}
+
+.countdown{
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.countdown-timer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.time{
+    font-size: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
