@@ -156,7 +156,7 @@ body {
 }
 
 .category:hover, .product:hover {
-    transform: scale(1.05);
+    /*transform: scale(1.05);*/
     background-color: #FFD54F; /* Light Mustard */
 }
 
@@ -202,5 +202,97 @@ body {
 }
 
 
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.pagination {
+    list-style: none;
+    display: flex;
+}
 
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    display: block;
+    padding: 10px 15px;
+    color: #007bff;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.page-item.disabled .page-link {
+    color: #ccc;
+    cursor: not-allowed;
+    border-color: #ddd;
+}
+
+.my-modal{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-modal .img{
+    background-color: wheat;
+    padding: 40px 40px; 
+    border-radius: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0,0,0.3);
+    position: relative;
+}
+
+.my-modal img{
+    width: 450px;
+}
+
+.close-btn,.right-btn,.left-btn{
+    position: absolute;
+    font-size: 20px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.close-btn{
+    top: 10px;
+    right: 20px;
+}
+
+.left-btn{
+    left: 10px;
+    top: 50%;
+}
+
+.right-btn{
+    right: 10px;
+    top: 50%;
+}
+
+.d-non{
+    display: none;
+}
